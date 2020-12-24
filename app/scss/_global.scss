@@ -16,12 +16,12 @@ body {
 }
 
 body {
-  font-family: ' ', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  // font-weight: 600;
-  // font-size: 20px;
-  // color: $white;
-  // background-color: $white;
+  font-weight: 500;
+  font-size: 16px;
+  color: $text-xs;
+  background-color: $white;
   min-width: 320px;
   overflow-x: hidden;
 }
@@ -38,9 +38,9 @@ body {
 }
 
 .container {
-  max-width: 0;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 a {
