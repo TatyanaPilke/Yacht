@@ -9,5 +9,8 @@
   font-weight: 600;
 }
 
+@mixin transition {
+  transition: background 0.5s ease;
+}
 
 
