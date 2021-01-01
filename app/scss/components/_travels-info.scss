@@ -2,6 +2,11 @@
   max-width: 320px;
   background: #FFFFFF;
   box-shadow: 0px 4px 22px rgba(180, 166, 166, 0.06);
+  transition: color 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.11);
+  }
 
   &__images {
     max-width: 320px;

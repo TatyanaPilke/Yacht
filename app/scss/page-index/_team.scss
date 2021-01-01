@@ -1,0 +1,73 @@
+.team {
+  padding: 75px 0 202px;
+
+  &__inner {
+    margin-top: 71px;
+  }
+
+  &__info {
+    max-width: 304px;
+    width: 100%;
+    margin-right: 43px;
+    text-align: center;
+  }
+
+  &__images {
+    max-width: 304px;
+    max-height: 280px;
+  }
+
+  &__img {
+    max-width: 304px;
+    max-height: 280px;
+  }
+
+  &__title-md {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+    &:before {
+      content: " ";
+      top: 100px;
+      width: 32px;
+      height: 12px;
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: $text-xs;
+  }
+
+  &__contacts {
+    margin-top: 25px;
+    padding: 0 0 20px 0;
+  }
+
+  &__link {
+    display: inline-block;
+    background-image: url(../../images/icon/css-sprites.png);
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+    margin-right: 5px;
+
+    &--whatsapp {
+      background-position: -0 -0;
+    }
+
+    &--facebook {
+      background-position: -34px -0;
+    }
+
+    &--insta {
+      background-position: -68px -0;
+      margin-right: 0;
+    }
+  }
+}
