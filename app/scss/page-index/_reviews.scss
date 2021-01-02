@@ -40,14 +40,6 @@
     margin-bottom: 34px;
   }
 
-  // .swiper-slide {
-  //   margin: 0 auto;
-  //   max-width: 840px;
-  //   max-height: 345px;
-  //   padding: 120px 165px 75px;
-  //   background-color: $white;
-  // } 
-
   .swiper-container {
     width: 840px;
     max-height: 345px;
@@ -75,9 +67,17 @@
     left: 0;
   }
 
-  .swiper-button-next {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
     right: 0;
     background-image: url(../../images/icon/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    padding: 10px;
     background-position: center;
+  }
+
+  .swiper-button-prev:after {
+    transform: rotate(-180deg);
   }
 }

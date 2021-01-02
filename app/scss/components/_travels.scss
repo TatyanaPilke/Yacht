@@ -13,6 +13,13 @@
     color: $black;
     border: 2px solid $black;
     border-radius: 50px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      color: $white;
+      border: transparent;
+      background-color: $black;
+    }
   }
 
   

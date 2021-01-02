@@ -1,0 +1,73 @@
+.footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  padding: 240px 0 171px;
+  font-family: 'Merriweather';
+  color: $white;
+
+  &__box-title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    text-transform: uppercase;
+  }
+
+  &__write {
+    margin-bottom: 0;
+    font-style: normal;
+  }
+
+  &__contacts {
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+
+    &--email {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__contact {
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+    line-height: 25.6px;
+    font-style: normal;
+
+    &--arrow {
+      position: relative;
+      transition: color 0.3s ease;
+
+      &:hover {
+          color: $bg-btn;
+      }
+
+      &:after {
+        content: " ";
+        display: block;
+        background-image: url(../../images/icon/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: 13px;
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        top: 4px;
+        right: -20px;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $bg-btn;
+    }
+  }
+}
