@@ -22,8 +22,12 @@
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
-    padding: 15px;
+    padding: 23px 50px 23px 23px;
     position: relative;
+
+    &:hover {
+      background-color: #E4F4FC;
+    }
   }
 
   .accordion-trigger::after {
@@ -43,6 +47,13 @@
     font-size: 16px;
     font-family: 'Merriweather', sans-serif;
     font-weight: 700;
+  }
+
+  .active {
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   .accordion-collapse {
