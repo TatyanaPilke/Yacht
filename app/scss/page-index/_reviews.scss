@@ -65,14 +65,21 @@
     opacity: 0.8;
     width: 56px;
     height: 56px;
+
+    &:hover {
+      background-color: $bg-btn;
+      opacity: 1;
+    }
   }
 
   .swiper-button-prev {
     left: 0;
+    border-radius: 0 3px 0 0;
   }
 
   .swiper-button-next {
     right: 0;
+    border-radius: 3px 0 0 0;
   }
 
   .swiper-button-next:after,
