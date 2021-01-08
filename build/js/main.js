@@ -32,13 +32,14 @@ $(function () {
   });
 
   document.onscroll = menuFixed;
-function menuFixed()
-{
-	if(window.scrollY > 0){    
-    document.querySelector('.header__top').classList.add('menu-fixed');
+
+  function menuFixed() {
+    if (window.scrollY > 0) {
+      document.querySelector('.header__top').classList.add('menu-fixed');
+    } 
+    else {
+      document.querySelector('.header__top').classList.remove('menu-fixed');
     }
-	else	{document.querySelector('.header__top').classList.remove('menu-fixed');
-    }
-}
+  }
 
 });

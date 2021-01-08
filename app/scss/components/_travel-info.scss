@@ -1,11 +1,13 @@
 .travel-info {
   max-width: 320px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 22px rgba(180, 166, 166, 0.06);
-  transition: color 0.3s ease;
+  background-color: $white;
+  transition: all 0.5s ease;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.11);
+  border-radius: 11px;
 
   &:hover {
     box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.11);
+    transform: translateY(-10px);
   }
 
   &__images {
@@ -77,17 +79,21 @@
   }
 
   &__price {
-    padding: 0 0 0 20px;
+    padding: 0;
   }
 
   &__price-euro {
     color: $price;
     font-size: 18px;
     font-weight: 600;
+    text-transform: uppercase;
+    padding: 14.5px 20px;
+    background-color: rgba(76, 120, 151, 0.06);
+    border-radius: 0px 11px;
   }
 
   &__link {
-    padding: 17.5px 19.5px;
+    padding: 14.5px 19.5px;
     background-color: rgba(255, 204, 102, 0.8);
     border-radius: 11px 0px;
     position: relative;

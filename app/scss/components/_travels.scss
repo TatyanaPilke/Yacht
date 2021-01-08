@@ -5,6 +5,7 @@
 
   &__inner {
     margin: 67px 0 71px;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -21,6 +22,4 @@
       background-color: $black;
     }
   }
-
-  
 }
