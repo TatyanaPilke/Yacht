@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="Ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sailing yacht</title>
   <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div class="page">
 <header class="header header-travels" style="background-image: url(../../images/bg-travel.jpg)">
@@ -42,11 +47,22 @@
   <div class="header__content header-travels__content">
     <h1 class="header__title header-travels__title">Путешествия</h1>
   </div>
+
+  <div class="choice-date">
+    <input class="header__calendar" type="text" id="datepicker" placeholder="Выберите месяц">
+    <select class="select2" style="width: 310px; height: 61px;">
+      <option></option>
+      <option>Алабама</option>
+      <option>Вайоминг</option>
+      <option>Алабама</option>
+      <option>Вайоминг</option>
+    </select>
+  </div>
 </header>
 
 <main class="main">
 
-  <section class="travels">
+  <section class="travels travels-years">
   <div class="container">
     <div class="travels__title title">
       2020
@@ -71,8 +87,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -95,8 +113,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -119,8 +139,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -143,8 +165,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -167,8 +191,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -191,8 +217,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -221,8 +249,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -245,8 +275,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -269,8 +301,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -293,8 +327,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -317,8 +353,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -341,8 +379,10 @@
           <span class="travel-info__price-euro">€ 720</span>
           <a class="travel-info__link" href="#">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z" fill="black"/>
-              </svg>
+              <path
+                d="M0.166344 7.45832H12.8434L7.02572 1.64061L8.49968 0.166656L16.833 8.49999L8.49968 16.8333L7.02572 15.3594L12.8434 9.54165H0.166344V7.45832Z"
+                fill="black" />
+            </svg>
           </a>
         </div>
       </article>
@@ -436,8 +476,11 @@
 </footer>
 
 </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
 </body>
+
 </html>
