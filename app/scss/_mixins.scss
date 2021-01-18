@@ -22,4 +22,17 @@
   }
 }
 
+@mixin title-tour {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  color: $text-title;
+}
+
+@mixin link-tour {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 700;
+  color: $text-title;
+}
+
 

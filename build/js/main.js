@@ -12,6 +12,15 @@
     },
   });
 
+  const swiperTour = new Swiper('.swiper-tour', {
+    slidesPerView: 3.2,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: false
+  });
+
+ 
+
   $(function () {
 
     $.fn.accordion = function () {
