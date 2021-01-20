@@ -1,0 +1,41 @@
+.tour-signup {
+  background-color: $footer-bg;
+
+  &__inner {
+    padding: 38px 0 55px;
+  }
+
+  &__box {
+    max-width: 600px;
+
+    &--left {
+      padding-top: 79px;
+    }
+  }
+
+  &__title {
+    @include title-tour;
+    color: $white;
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 46px;
+  }
+
+  &__item {
+    @include title-tour;
+    font-size: 16px;
+    color: $white;
+  }
+
+  &__form {
+    position: relative;
+    padding: 30px 60px 0;
+  }
+
+  &__title {
+    &:before {
+      content: " ";
+      display: none;
+    }
+  }
+}

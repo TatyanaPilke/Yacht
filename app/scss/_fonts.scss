@@ -63,11 +63,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?n1niqq');
-  src:  url('../fonts/icomoon.eot?n1niqq#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?n1niqq') format('truetype'),
-    url('../fonts/icomoon.woff?n1niqq') format('woff'),
-    url('../fonts/icomoon.svg?n1niqq#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?ertnxv');
+  src:  url('../fonts/icomoon.eot?ertnxv#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ertnxv') format('truetype'),
+    url('../fonts/icomoon.woff?ertnxv') format('woff'),
+    url('../fonts/icomoon.svg?ertnxv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -93,6 +93,9 @@
 }
 .icon-minus:before {
   content: "\f068";
+}
+.icon-map-marker:before {
+  content: "\f041";
 }
 .icon-arrow-left:before {
   content: "\f060";

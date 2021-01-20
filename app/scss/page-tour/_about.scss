@@ -1,0 +1,52 @@
+.about {
+  padding-top: 64px;
+
+  &__yacht {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 77px;
+  }
+
+  &__boxes {
+   padding: 0;
+  }
+
+  &__box-img {
+    max-width: 601px;
+    max-height: 434px;
+    margin-right: 60px;
+  }
+
+  &__img {
+    max-width: 601px;
+    max-height: 434px;
+  }
+
+  &__text {
+    max-width: 480px;
+    padding: 20px 0;
+  }
+
+  &__link {
+    font-size: 14px;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1.5px solid #101010;
+    color: #101010;
+    text-transform: uppercase;
+    border-radius: 800px;
+    @include transition;
+
+    &:hover {
+      background-color: #101010;
+      color: $white;
+    }
+  }
+
+}
