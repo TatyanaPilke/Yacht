@@ -63,11 +63,9 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ertnxv');
-  src:  url('../fonts/icomoon.eot?ertnxv#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ertnxv') format('truetype'),
-    url('../fonts/icomoon.woff?ertnxv') format('woff'),
-    url('../fonts/icomoon.svg?ertnxv#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('woff'),
+    url('../fonts/icomoon.woff') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

@@ -3,6 +3,8 @@
 @import 'global';
 @import 'mixins';
 
+// import компонентов
+
 @import 'components/_header';
 @import 'components/_travels';
 @import 'components/_travel-info';
@@ -10,8 +12,10 @@
 @import 'components/_form';
 @import 'components/_faq';
 @import 'components/_tour-info';
+@import 'components/_tour-signup';
 
 
+// import стилей 
 @import 'page-index.scss';
 @import 'page-travels.scss';
 @import 'page-tour.scss';
