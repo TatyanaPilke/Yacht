@@ -1,4 +1,6 @@
-  const swiper = new Swiper('.swiper-container', {
+  // start Swiper 
+  
+  var swiper = new Swiper('.swiper-container', {
     hashNavigation: {
       watchState: true,
     },
@@ -12,14 +14,15 @@
     },
   });
 
-  const swiperTour = new Swiper('.swiper-tour', {
+  var swiperTour = new Swiper('.swiper-tour', {
     slidesPerView: 3.2,
     spaceBetween: 30,
     freeMode: true,
     pagination: false
   });
-
+// end Swiper 
  
+// start accordion 
 
   $(function () {
 
@@ -49,12 +52,19 @@
         document.querySelector('.header__top').classList.remove('menu-fixed');
       }
     }
+// end accordion  
+
+// start select 
 
     $(document).ready(function () {
       $(".select2").select2({
         placeholder: "Выберите направление",
       });
     });
+
+    // end select 
+
+// start datepicker 
 
     $(function () {
       $("#datepicker").datepicker();
@@ -83,5 +93,18 @@
         };
         $.datepicker.setDefaults($.datepicker.regional['ru']);
       });
+    });
+  });
+
+  // start datepicker 
+
+  $(document).ready(function () {
+    $("#header-menu").on("click", "a", function (event) {
+      event.preventDefault();
+      var id = $(this).attr('href'),
+        top = $(id).offset().top;
+      $('body,html').animate({
+        scrollTop: top
+      }, 1500);
     });
   });

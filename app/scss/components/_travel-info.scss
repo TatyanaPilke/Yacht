@@ -10,6 +10,17 @@
     transform: translateY(-10px);
   }
 
+
+  &__three {
+
+    //  @media (max-width: 992px) {
+    //    display: none;
+    //  }
+    @include r(992) {
+      display: none;
+    }
+  }
+
   &__images {
     max-width: 320px;
     max-height: 278px;

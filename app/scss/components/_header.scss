@@ -43,10 +43,10 @@
   &__title {
     font-family: 'Merriweather';
     font-weight: 400;
-    font-size: 48px;
+    font-size: calc(30px + 16 * ((100vw - 320px) / (1200 - 320)));
     color: $white;
     line-height: 62.4px;
-    margin: 10px 0 36px;
+    margin: 10px 0 55px;
   }
 
   &__link-btn {
