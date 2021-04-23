@@ -1,4 +1,4 @@
-  const swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiper-container', {
     hashNavigation: {
       watchState: true,
     },
@@ -12,7 +12,7 @@
     },
   });
 
-  const swiperTour = new Swiper('.swiper-tour', {
+  var swiperTour = new Swiper('.swiper-tour', {
     slidesPerView: 3.2,
     spaceBetween: 30,
     freeMode: true,
