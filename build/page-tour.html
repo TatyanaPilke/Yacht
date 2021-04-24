@@ -22,35 +22,41 @@
     <a class="logo" href="index.html">
       <img class="logo__link" src="images/icon/logo.svg" alt="#">
     </a>
-    <nav class="menu">
-      <ul class="menu__list d-flex f-aic">
-        <li class="menu__item">
-          <a class="menu__link" href="page-travels.html">Путешествия</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="page-yacht.html">Наши яхты</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="page-team.html">Команда</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#faq">faq</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="page-blog.html">Блог</a>
-        </li>
-        <li class="menu__item" id="header-menu">
-          <a class="menu__link menu__link--link-btn" href="#form">Написать нам</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="header__content header-tour__content">
-    <h1 class="header__title header-tour__title">Божественная Сардиния: море, природа и dolce vita</h1>
-    <span class="header-tour__price">25 августа - 5 сентября 2020</span>
-    <span class="header-tour__price header-tour__price--euro">€ 700</span>
-    <a class="header__link-btn" href="#">Записаться</a>
-  </div>
+    <div class="header__menu menu">
+      <div class="menu__icon">
+        <span class="menu__burger"></span>
+      </div>
+      <div class="header__menu menu">
+        <nav class="menu__body">
+          <ul class="menu__list d-flex f-aic">
+            <li class="menu__item">
+              <a class="menu__link" href="page-travels.html">Путешествия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="page-yacht.html">Наши яхты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="page-team.html">Команда</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#faq">faq</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="page-blogpost.html">Блог</a>
+            </li>
+            <li class="menu__item" id="header-menu">
+              <a class="menu__link menu__link--link-btn" href="#form">Написать нам</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header__content header-tour__content">
+      <h1 class="header__title header-tour__title">Божественная Сардиния: море, природа и dolce vita</h1>
+      <span class="header-tour__price">25 августа - 5 сентября 2020</span>
+      <span class="header-tour__price header-tour__price--euro">€ 700</span>
+      <a class="header__link-btn" href="#">Записаться</a>
+    </div>
 </header>
 
 <!-- header Tour end -->
@@ -339,11 +345,11 @@
 <footer class="footer" id="form">
   <div class="footer__inner" style="background-image: url(images/footer-bg.jpg);">
     <div class="container">
-      <div class="footer__box">
-        <div class="footer__box-title">
-          Остались вопросы?
-        </div>
+      <div class="footer__box d-flex f-jcsb">
         <address class="footer__address">
+          <h4 class="footer__box-title">
+            Остались вопросы?
+          </h4>
           <p class="footer__write">
             Напишите нам на почту
           </p>
@@ -368,12 +374,30 @@
             </li>
           </ul>
         </address>
+
+        <form class="footer-form" action="#" method="post">
+          <div class="footer-form__title">
+            Задать вопрос
+          </div>
+          <label class="footer-form__label">
+            <input class="footer-form__name" type="text" placeholder="Ваше имя *" required>
+          </label>
+          <label class="footer-form__label">
+            <input class="footer-form__name" type="email" placeholder="Email *" required>
+          </label>
+          <label class="footer-form__label">
+            <input class="footer-form__name" type="tel" placeholder="Телефон *" required>
+          </label>
+          <textarea class="footer-form__name footer-form__textarea" placeholder="Вопрос *" required></textarea>
+          <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
   </div>
+
   <div class="footer__bottom">
-    <div class="footer__borttom-inner d-flex f-jcsb f-aic">
-      <div class="footer__info d-flex f-aic">
+    <div class="footer__bottom-inner d-flex f-jcsb f-aic">
+      <div class="footer__info footer__info--left d-flex f-aic">
         <a class="logo footer__logo" href="#">
           <img class="logo__link" src="images/icon/logo.svg" alt="#">
         </a>
@@ -393,26 +417,10 @@
             <a class="footer__network-link footer__network-link--youtube" href="#"></a>
           </li>
         </ul>
-        <span class="footer__bottom-text">– Подписывайтесь!</span>
+        <span class="footer__bottom-text footer__bottom-text--none">– Подписывайтесь!</span>
       </div>
     </div>
   </div>
-  <form class="footer-form" action="#" method="post">
-    <div class="footer-form__title">
-      Задать вопрос
-    </div>
-    <label class="footer-form__label">
-      <input class="footer-form__name" type="text" placeholder="Ваше имя *" required>
-    </label>
-    <label class="footer-form__label">
-      <input class="footer-form__name" type="email" placeholder="Email *" required>
-    </label>
-    <label class="footer-form__label">
-      <input class="footer-form__name" type="tel" placeholder="Телефон *" required>
-    </label>
-    <textarea class="footer-form__name footer-form__textarea" placeholder="Вопрос *" required></textarea>
-    <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
-  </form>
 </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

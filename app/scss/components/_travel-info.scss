@@ -10,13 +10,17 @@
     transform: translateY(-10px);
   }
 
+  @include r ($tablet) {
+    margin: 15px;
+  }
 
-  &__three {
+  @include r ($tablet-large) {
+    display: flex;
+    flex-direction: column;
+  }
 
-    //  @media (max-width: 992px) {
-    //    display: none;
-    //  }
-    @include r(992) {
+  &__none {
+    @include r ($tablet) {
       display: none;
     }
   }

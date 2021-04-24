@@ -4,6 +4,14 @@
   background-position: top;
   padding: 88px 0 142px;
 
+  @include r ($tablet) {
+    padding-bottom: 0;
+  } 
+
+  @include r ($mobile) {
+    padding: 40px 0 20px;
+  }
+
   &__title {
     margin: 0 auto;
     text-align: center;
@@ -12,6 +20,11 @@
   &__inner {
     margin-top: 66px;
     counter-reset: number;
+
+    @include r ($tablet) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   &__title-md {
@@ -30,6 +43,12 @@
     max-width: 304px;
     box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.06);
     counter-increment: number;
+
+    &--none {
+      @include r ($tablet) {
+        display: none;
+      }
+    }
   }
 
   &__images {
