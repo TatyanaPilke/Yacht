@@ -3,6 +3,12 @@
 
   &__inner {
     padding: 52px 0 62px;
+
+    @include r ($desctop) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
@@ -87,9 +93,13 @@
   }
 
   .swiper-tour {
-    margin: 0 0 88px 10%;
+    margin: 0 0 88px 30px;
     height: 315px;
     width: 100%;
+
+    @include r ($mobile) {
+      margin: 0 0 50px 0;
+    }
   }
   
   .slide-tour {

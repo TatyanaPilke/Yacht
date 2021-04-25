@@ -1,3 +1,12 @@
 .header-yacht {
-  height: 385px;
+  max-height: 385px;
+
+  &__content {
+   padding: 170px 0 130px;
+   margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0;
+  }
 }

@@ -10,6 +10,10 @@
 
     &--left {
       padding-top: 79px;
+
+      @include r ($tablet) {
+        padding-top: 20px;
+      }
     }
   }
 
