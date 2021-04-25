@@ -1,3 +1,19 @@
 .header-team {
-  height: 385px;
+  max-height: 385px;
+
+  @include r ($tablet) {
+    max-height: 275px;
+  }
+
+  &__content {
+    padding: 70px 0;
+
+    @include r ($tablet) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
 }
