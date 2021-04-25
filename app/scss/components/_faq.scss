@@ -1,6 +1,10 @@
 .faq {
   padding: 67px 0 105px;
 
+  @include r ($tablet) {
+    padding: 67px 0 25px 0;
+  }
+
   &__title {
     text-transform: uppercase;
     text-align: center;

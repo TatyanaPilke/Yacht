@@ -98,7 +98,6 @@
 
   // end datepicker 
 
-
 // start scroll on click 
 
   $(document).ready(function () {

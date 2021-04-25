@@ -1,7 +1,15 @@
 .travels-years {
   padding-top: 111px;
 
+  @include r ($tablet) {
+    padding-bottom: 0;
+  }
+
   &__info {
     margin-bottom: 59px;
+
+    @include r ($tablet) {
+      margin-bottom: 20px;
+    }
   }
 }
