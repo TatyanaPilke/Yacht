@@ -11,8 +11,12 @@
 
   &__cruiser {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+
+    @include r ($mobile) {
+      font-size: 12px;
+    }
 
     &--map {
       position: relative;
@@ -32,6 +36,10 @@
 
   &__title {
     margin-bottom: 16px;
+
+    @include r ($mobile) {
+      font-size: 25px;
+    }
   }
 
   &__text {
@@ -88,8 +96,11 @@
 
   &__btn {
     @include r ($tablet) {
+      white-space: nowrap;
       position: absolute;
-      bottom: 50px;
+      bottom: 40px;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

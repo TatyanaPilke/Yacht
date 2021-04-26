@@ -3,6 +3,10 @@
   background-color: $white;
   padding: 76px 0 66px;
 
+  @include r ($tablet) {
+    padding: 75px 0 95px;
+  }
+
   @include r ($mobile) {
     padding-top: 30px;
   }
@@ -13,7 +17,7 @@
 
     @include r ($tablet) {
       justify-content: center;
-      margin-bottom: 0;
+      margin-bottom: 60px;
     }
 
     @include r ($mobile) {

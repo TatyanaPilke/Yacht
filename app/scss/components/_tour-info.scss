@@ -19,6 +19,10 @@
     &--subtitle {
       padding-top: 70px;
     }
+
+    @include r ($tablet) {
+      line-height: 1.3em;
+    }
   }
 
   &__boxes {
@@ -31,6 +35,10 @@
     &--route {
       max-width: 480px;
       padding: 10px 0 42px 46px;
+
+      @include r ($mobile) {
+        padding: 10px 0 42px 26px;
+      }
     }
   }
 

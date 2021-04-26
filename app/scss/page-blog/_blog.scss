@@ -1,16 +1,8 @@
 .blog {
   max-height: 385px;
 
-  @include r ($tablet) {
-    max-height: 275px;
-  }
-
   &__content {
-    padding: 70px 0;
-
-    @include r ($tablet) {
-      padding: 0;
-    }
+    padding: 60px 0 140px;
   }
 
   &__title {
