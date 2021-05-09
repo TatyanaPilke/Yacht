@@ -13,13 +13,13 @@
   &__boxes {
     margin-bottom: 88px;
 
-    @include r ($desctop) {
+    @include r ($desktop) {
       flex-direction: column-reverse;
       align-items: center;
     }
 
     &--reverse {
-      @include r ($desctop) {
+      @include r ($desktop) {
         flex-direction: column;
       }
     }
@@ -47,7 +47,7 @@
     height: 100%;
     object-fit: cover;
 
-    @include r ($desctop){
+    @include r ($desktop){
       margin: 0 10px;
     }
   }

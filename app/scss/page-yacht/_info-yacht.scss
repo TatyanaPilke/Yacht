@@ -50,7 +50,7 @@
     max-height: 390px;
     max-width: 600px;
 
-    @include r ($desctop) {
+    @include r ($desktop) {
       margin: 0 auto 30px;
     }
   }
