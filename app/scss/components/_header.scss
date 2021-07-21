@@ -5,7 +5,6 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100vh;
 
   &:after {
     content: " ";
@@ -32,19 +31,11 @@
 
   &__content {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 2;
-<<<<<<< HEAD
     margin: 0 auto;
     text-align: center;
     max-width: 800px;
     padding: 224px 0 170px;
-=======
-    text-align: center;
-    max-width: 800px;
->>>>>>> bd2f4bdcd659ac8a4bfb4957270c5ec4aa83c83b
 
     @include r ($tablet) {
       max-width: 700px;
