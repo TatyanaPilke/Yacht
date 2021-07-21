@@ -46,5 +46,13 @@
 
   &__info-card {
     margin-bottom: 64px;
+
+    @include r ($tablet) {
+      margin-bottom: 35px;
+    }
+
+    @include r ($tablet-large) {
+      margin-bottom: 25px;
+    }
   }
 }

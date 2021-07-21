@@ -1,5 +1,5 @@
   // start Swiper 
-  
+
   var swiper = new Swiper('.swiper-container', {
     hashNavigation: {
       watchState: true,
@@ -11,18 +11,28 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
+    }
   });
 
   var swiperTour = new Swiper('.swiper-tour', {
-    slidesPerView: 3.2,
-    spaceBetween: 30,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
     freeMode: true,
-    pagination: false
+    pagination: false,
+    // Responsive breakpoints
+    breakpoints: {
+      320: {
+        spaceBetween: 5
+      },
+
+      768: {
+        spaceBetween: 30
+      }
+    },
   });
-// end Swiper 
- 
-// start accordion 
+  // end Swiper 
+
+  // start accordion 
 
   $(function () {
 
@@ -52,9 +62,9 @@
         document.querySelector('.header__top').classList.remove('menu-fixed');
       }
     }
-// end accordion  
+    // end accordion  
 
-// start select 
+    // start select 
 
     $(document).ready(function () {
       $(".select2").select2({
@@ -64,7 +74,7 @@
 
     // end select 
 
-// start datepicker 
+    // start datepicker 
 
     $(function () {
       $("#datepicker").datepicker();
@@ -98,8 +108,7 @@
 
   // end datepicker 
 
-
-// start scroll on click 
+  // start scroll on click 
 
   $(document).ready(function () {
     $("#header-menu").on("click", "a", function (event) {
@@ -111,41 +120,41 @@
       }, 1500);
     });
   });
-  
-// end scroll on click 
 
-const isMobile = {
-	Android: function () {
-		return navigator.userAgent.match(/Android/i);
-	},
-	BlackBerry: function () {
-		return navigator.userAgent.match(/BlackBerry/i);
-	},
-	iOS: function () {
-		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-	},
-	Opera: function () {
-		return navigator.userAgent.match(/Opera Mini/i);
-	},
-	Windows: function () {
-		return navigator.userAgent.match(/IEMobile/i);
-	},
-	any: function () {
-		return (
-			isMobile.Android() ||
-			isMobile.BlackBerry() ||
-			isMobile.iOS() ||
-			isMobile.Opera() ||
-			isMobile.Windows());
-	}
-};
+  // end scroll on click 
 
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.menu__body');
-if (iconMenu) {
-	iconMenu.addEventListener("click", function (e) {
-		document.body.classList.toggle('_lock');
-		iconMenu.classList.toggle('_active');
-		menuBody.classList.toggle('_active');
-	});
-}
+  const isMobile = {
+    Android: function () {
+      return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function () {
+      return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function () {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function () {
+      return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function () {
+      return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function () {
+      return (
+        isMobile.Android() ||
+        isMobile.BlackBerry() ||
+        isMobile.iOS() ||
+        isMobile.Opera() ||
+        isMobile.Windows());
+    }
+  };
+
+  const iconMenu = document.querySelector('.menu__icon');
+  const menuBody = document.querySelector('.menu__body');
+  if (iconMenu) {
+    iconMenu.addEventListener("click", function (e) {
+      document.body.classList.toggle('_lock');
+      iconMenu.classList.toggle('_active');
+      menuBody.classList.toggle('_active');
+    });
+  }

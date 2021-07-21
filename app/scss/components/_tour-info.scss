@@ -3,6 +3,12 @@
 
   &__inner {
     padding: 52px 0 62px;
+
+    @include r ($desktop) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
@@ -12,6 +18,10 @@
 
     &--subtitle {
       padding-top: 70px;
+    }
+
+    @include r ($tablet) {
+      line-height: 1.3em;
     }
   }
 
@@ -25,6 +35,10 @@
     &--route {
       max-width: 480px;
       padding: 10px 0 42px 46px;
+
+      @include r ($mobile) {
+        padding: 10px 0 42px 26px;
+      }
     }
   }
 
@@ -87,9 +101,13 @@
   }
 
   .swiper-tour {
-    margin: 0 0 88px 10%;
+    margin: 0 0 88px 30px;
     height: 315px;
     width: 100%;
+
+    @include r ($mobile) {
+      margin: 0 0 50px 0;
+    }
   }
   
   .slide-tour {

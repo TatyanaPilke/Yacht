@@ -1,14 +1,22 @@
 .info-yacht {
   padding: 64px 0 56px;
 
+  @include r ($tablet-large) {
+    padding: 22px 0;
+  }
+
   &__inner {
     padding: 0 0 56px;
   }
 
   &__cruiser {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+
+    @include r ($mobile) {
+      font-size: 12px;
+    }
 
     &--map {
       position: relative;
@@ -28,6 +36,10 @@
 
   &__title {
     margin-bottom: 16px;
+
+    @include r ($mobile) {
+      font-size: 25px;
+    }
   }
 
   &__text {
@@ -37,6 +49,10 @@
   &__image {
     max-height: 390px;
     max-width: 600px;
+
+    @include r ($desktop) {
+      margin: 0 auto 30px;
+    }
   }
 
   &__img {
@@ -49,14 +65,42 @@
 
   &__inner-equipment {
     padding: 74px 0;
+    position: relative;
+
+    @include r ($tablet) {
+      flex-direction: column;
+    }
+
+    @include r ($tablet) {
+     padding-bottom: 150px;
+    }
   }
 
   &__list-equipment {
     column-count: 2;
     padding-right: 128px;
+
+    @include r ($tablet) {
+      padding-right: 0;
+    }
+
+    @include r ($mobile) {
+      column-count: 1;
+      padding-right: 20px;
+    }
   }
 
   &__title-equipment {
     margin-bottom: 30px;
+  }
+
+  &__btn {
+    @include r ($tablet) {
+      white-space: nowrap;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }

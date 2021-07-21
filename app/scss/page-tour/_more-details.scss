@@ -12,6 +12,17 @@
 
   &__boxes {
     margin-bottom: 88px;
+
+    @include r ($desktop) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &--reverse {
+      @include r ($desktop) {
+        flex-direction: column;
+      }
+    }
   }
 
   &__box {
@@ -26,6 +37,7 @@
   &__text {
     @include title-tour;
     font-size: 16px;
+    margin-right: 20px;
   } 
   
   &__box-img {
@@ -34,11 +46,14 @@
     max-height: 434px;
     height: 100%;
     object-fit: cover;
+
+    @include r ($desktop){
+      margin: 0 10px;
+    }
   }
 
   &__img {
-    max-width: 601px;
-    max-height: 434px;
+    width: 100%;
     height: 100%;
   }
 }
