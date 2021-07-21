@@ -1,3 +1,9 @@
 .header-team {
-  height: 385px;
+  &__content {
+    padding: 163px 0 160px;
+  }
+
+  &__title {
+    margin: 0;
+  }
 }
